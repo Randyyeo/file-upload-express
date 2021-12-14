@@ -34,4 +34,4 @@ mongoose.connection.on("connected", () => {
     console.log("Connected to MongoDB")
 })
 
-app.listen(4000, console.log("Running this app on 4000"));
+app.listen(process.env.PORT || 4000, console.log("Running this app on 4000"));
