@@ -11,7 +11,7 @@ router.post("/", async (req, res) => {
     var file = req.files.file
     var filename = file.name
     
-    file.mv(__dirname + "/files/" + filename, function(err){
+    file.mv(__dirname + "../files/" + filename, function(err){
       if (err){
         res.status(500).send(err)
       } else {
