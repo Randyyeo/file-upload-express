@@ -11,6 +11,7 @@ const authRoute = require("./routes/middleware");
 const usersRoute = require("./routes/users");
 const filesRoute = require("./routes/files")
 
+app.disable('x-powered-by');
 app.use(cors());
 app.use(upload())
 
